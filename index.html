@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
-    <title>Banner Item</title>
+    <title>Summer Sale</title>
     <script>
         tailwind.config = {
           theme: {
@@ -47,13 +47,15 @@
 
     <!-- products container section start here -->
     <div id="accesories-container" class="flex lg:flex-row md:flex-col flex-col lg:mx-auto lg:my-28 gap-6 bg-[#1111110D] lg:h-[1000px] lg:w-[1600px]  ">
+
+      <!-- products card item starts here -->
       <div>
          <!-- kitchen products -->
               <div>
                   <h3 class="text-black text-4xl font-semibold">Kitchenware</h3>
                   <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 ml-5">
                       <!-- first product -->
-                      <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg">
+                      <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg " onclick="priceOfProduct('first-product','first-product-name')">
                           <figure class="px-10 pt-8 pb-8 w-[302px] bg-[#1111110D] mx-auto my-5 rounded-lg">
                             <img src="./images/prod1.png" alt="K. Accessories"  />
                           </figure>
@@ -65,12 +67,12 @@
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h4>K. Accessories</h4>
-                                <p><span>39.00</span>Tk</p>
+                                <h4 id="first-product-name">K. Accessories</h4>
+                                <p><span id="first-product">39.00</span>Tk</p>
                           </div>
                         </div>
                         <!-- second product -->
-                        <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg">
+                        <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg" onclick="priceOfProduct('second-product','second-product-name')">
                           <figure class="px-10 pt-8 pb-8 w-[302px] bg-[#1111110D] mx-auto my-5 rounded-lg">
                             <img src="./images/prod2.png" alt="K. Accessories"  />
                           </figure>
@@ -83,12 +85,12 @@
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h4>K. Accessories</h4>
-                                <p><span>25.00</span>Tk</p>
+                                <h4 id="second-product-name">K. Accessories</h4>
+                                <p><span id="second-product">25.00</span>Tk</p>
                           </div>
                         </div>
                         <!-- third product -->
-                        <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg">
+                        <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg" onclick="priceOfProduct('third-product','third-product-name')">
                           <figure class="px-10 pt-8 pb-8 w-[302px] bg-[#1111110D] mx-auto my-5 rounded-lg">
                             <img src="./images/prod3.png" alt="K. Accessories"  />
                           </figure>
@@ -100,8 +102,8 @@
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h4>Home Cooker</h4>
-                                <p><span>49.00</span>Tk</p>
+                                <h4 id="third-product-name">Home Cooker</h4>
+                                <p id="third-product"><span>49.00</span>Tk</p>
                           </div>
                         </div>
                       
@@ -113,7 +115,7 @@
                   <h3 class="text-black text-4xl font-semibold">Sportswear</h3>
                   <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 ml-5">
                       <!-- first product -->
-                      <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg">
+                      <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg" onclick="priceOfProduct('fourth-product','fourth-product-name')">
                         <figure class="px-10 pt-8 pb-8 w-[302px] bg-[#1111110D] mx-auto my-5 rounded-lg">
                           <img src="./images/prod4.png" alt="K. Accessories"  />
                         </figure>
@@ -125,12 +127,12 @@
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h4>Sports Back Cap</h4>
-                                <p><span>49.00</span>Tk</p>
+                                <h4 id="fourth-product-name">Sports Back Cap</h4>
+                                <p><span id="fourth-product">49.00</span>Tk</p>
                           </div>
                         </div>
                         <!-- second product -->
-                        <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg">
+                        <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg" onclick="priceOfProduct('fifth-product','fifth-product-name')">
                           <figure class="px-10 pt-8 pb-8 w-[302px] bg-[#1111110D] mx-auto my-5 rounded-lg">
                             <img src="./images/prod5.png" alt="K. Accessories"  />
                           </figure>
@@ -142,12 +144,12 @@
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h4>Full Jersey Set</h4>
-                                <p><span>69.00</span>Tk</p>
+                                <h4 id="fifth-product-name">Full Jersey Set</h4>
+                                <p><span id="fifth-product">69.00</span>Tk</p>
                           </div>
                         </div>
                         <!-- third product -->
-                        <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg">
+                        <div class="card w-96 bg-[#FFF] shadow-xl rounded-lg" onclick="priceOfProduct('sixth-product','sixth-product-name')">
                           <figure class="px-10 pt-8 pb-8 w-[302px] bg-[#1111110D] mx-auto my-5 rounded-lg">
                             <img src="./images/prod6.png" alt="K. Accessories"  />
                           </figure>
@@ -159,8 +161,8 @@
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                                <h4>Sports cates</h4>
-                                <p><span>159.00</span>Tk</p>
+                                <h4 id="sixth-product-name">Sports cates</h4>
+                                <p><span id="sixth-product">159.00</span>Tk</p>
                           </div>
                         </div>
                       
@@ -168,26 +170,59 @@
               </div>
       
       </div>
-          <!--product section end -->
-              <div class="mt-10">
-                    <div class="bg-[#FFFFFF] rounded-lg mb-5 w-[342px] h-[148px] ">
-                        <h3 class="text-black text-2xl font-medium mb-8 md:text-center">Have coupon?</h3>
-                          <div class="flex md:items-center justify-center">
-                            <input class="w-32 h-10 text-center border" type="text" placeholder="coupon code">
-                            <button class="bg-[#E527B2] text-white px-5 py-3 rounded-lg border-none" disabled>Apply</button>
-                          </div>
+          <!--products card item ended here -->
+
+          <!-- discount section started here -->
+          <div class="md:mx-auto">
+            <!-- Discount Coupon Section -->
+            <div class=" ml-10 lg:ml-6 mt-28 border rounded-lg w-[342px] h-[148px]">
+                <h1 class="text-2xl text-black font-medium mb-4 pl-6 pt-6">Have coupon?</h1>
+                <div class="flex items-center space-x-2 mb-4 pl-6">
+                    <input type="text" class="w-[194px] px-4 py-2 border rounded-lg" id="coupon-input" placeholder="Coupon Code">
+                    <button disabled id="apply-btn" onclick="balance()"class="pt-2 pb-2 pr-4 pl-4 bg-[#E527B2] disabled:bg-[#e078c5] w-[100px] text-white rounded-lg">Apply</button>
+                </div>
+            </div>
+      
+            <!-- Show Cart Name -->
+            <div>
+                <div class="mt-6 ml-10 w-[342px] lg:ml-6 border rounded-lg bg-[#FFF]">
+                    <div class="ml-5 mt-6 text-2xl font-medium list-decimal" id="productList">
+                        <ol class="">
+                        </ol>
                     </div>
-                  <div class="absolute">
-                      <div class="mt-6 ml-10  lg:ml-1 border w-[342px] h-[416px]  rounded-lg bg-[#FFF]">
-                        
-                      </div>
-                      <div>
-                        <button class="bg-[#E527B2] text-white px-16 pt-4 pb-4 relative -top-10 left-16 lg:left-12 rounded-lg text-xl font-semibold" > Make Purchase</button>
-                      </div>
-                  </div>
-              </div>
-          </div>
-    
-    <!-- products container section ended here -->
+                    <!-- Total amount -->
+                    <hr class="my-5 ml-4 w-[294px]">
+                    <div class="w-[280px] h-[200px]">
+                        <p class="text-2xl font-medium text-black pb-3 pt-2  ml-5">Total Price : <span id="total-price" class="text-[#1111117F]">00.00</span> TK</p>
+                        <p class="text-2xl font-medium text-black pb-3 ml-5">Discount : <span id="discount-value" class="text-[#1111117F]">00.00</span>TK</p>
+                        <p class="text-2xl font-medium text-black pb-3 ml-5">Total : <span id="total-pay-value"class="text-[#1111117F]">00.00 </span> TK</p>
+                        <hr class="ml-4 w-[294px]">
+                    </div>
+                </div>
+                <!-- Make purchase and Modal part -->
+                <div>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button disabled id="make-purchase-btn"
+                        class="pl-[72px] pr-[72px] pt-4 pb-4 -mt-6 ml-16 lg:ml-12 mb-5 bg-[#E527B2] text-white rounded-lg text-[20px] font-semibold disabled:bg-[#e078c5]"
+                        onclick="my_modal_1.showModal()">Make Purchase</button>
+                    <dialog id="my_modal_1" class="modal modal-middle">
+                        <form method="dialog" class="modal-box lg:w-[600px] lg:h-[600px]">
+                            <img class="mx-auto mb-10 mt-24" src="./images/congo.png" alt="">
+                            <h1 class="font-bold text-center lg:text-5xl mb-4">Congratulations</h1>
+                            <p class="py-4 lg:text-xl text-center mb-10">Your Purchase the product</p>
+                            <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button
+                                    class="mx-auto pt-4 pb-4 pr-11 pl-11 bg-[#E527B2] text-white rounded-lg" id="go-home-btn">Go
+                                    Home</button>
+                            </div>
+                        </form>
+                    </dialog>
+                </div>
+      
+            </div>
+        </div>
+        <!-- discount section ended here -->
+    <script src="js/summersale.js"></script>
 </body>
 </html>
